@@ -17,7 +17,7 @@ app.configure ->
   app.use express.cookieParser()
   app.use express.session(secret: "supersecret")
   app.use app.router
-  mongoose.connect CONFIG.db
+  # mongoose.connect CONFIG.db
 
 app.configure "production", ->
   app.use express.errorHandler()
