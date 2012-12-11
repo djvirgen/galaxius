@@ -1,0 +1,18 @@
+{
+    "name": "application-name"
+  , "version": "0.0.1"
+  , "private": true
+  , "dependencies": {
+      "coffee-script": "*"
+    , "config": "*"
+    , "express": "2.x"
+    , "jade": "*"
+    , "mongoose": ">= 3.3.1"
+    , "stylus": "*"
+    , "yaml": "*"
+  }
+  , "engines": {
+    "node": "0.8.x",
+    "npm":  "1.1.x"
+  }
+}

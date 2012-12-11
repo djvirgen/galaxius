@@ -1,0 +1,21 @@
+!!!5
+html
+  head
+    title Space Shooter!!
+    link(href="http://fonts.googleapis.com/css?family=Open+Sans:300|Open+Sans+Condensed:300&amp;v2", rel="stylesheet", type="text/css")
+    link(rel="stylesheet", href="/css/layout.css")
+    script(type="text/javascript", src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js")
+    script(type="text/javascript", src="/js/lib/processing-1.4.1.min.js")
+    script(type="text/javascript", src="/js/app.js")
+  body
+    header
+      #logo: a(href="/") Space Shooter!!
+      nav
+        a(href="/") New Game
+        a(href="/scores") Top Scores
+        a(href="/settings") Settings
+    section#content.container!=body
+    footer
+      | Copyright &copy; 2013 
+      a(href="/") Virgen Technologies
+      | . All rights reserved.
