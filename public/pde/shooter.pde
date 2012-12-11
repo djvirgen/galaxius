@@ -1,4 +1,4 @@
-int DIFFICULTY = 3;
+int DIFFICULTY = 5;
 int MAX_STARS = 80;
 int GAME_WIDTH = 800;
 int GAME_HEIGHT = 450;
@@ -280,7 +280,9 @@ class Shot {
     stroke(180, 180, 0, 0.5);
     fill(255, 220, 50);
 
-    rect(position_x - WIDTH / 2, position_y - HEIGHT / 2, WIDTH, HEIGHT, WIDTH);
+    // draw two
+    rect(position_x - WIDTH / 2 - 5, position_y - HEIGHT / 2, WIDTH, HEIGHT, WIDTH);
+    rect(position_x - WIDTH / 2 + 5, position_y - HEIGHT / 2, WIDTH, HEIGHT, WIDTH);
   }
 
   bool isFinished() {
@@ -337,7 +339,7 @@ class Asteroid {
   float position_y;
   float size;
   float speed;
-  int health = 1;
+  int health;
   bool finished = false;
   bool isHit = false;
 
@@ -350,7 +352,7 @@ class Asteroid {
     position_x = random(0, GAME_WIDTH);
     position_y = 0 - (size / 2);
     speed = random(1, 5) * DIFFICULTY / 5;
-    health = sqrt(size);
+    health = floor(sqrt(size));
   }
 
   void hit(int damage) {
