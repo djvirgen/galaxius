@@ -241,6 +241,9 @@ class Player {
       fill(200, 210, 220, 200);
       triangle(x1, y1, x2, y2, x3, y3);
     }
+
+    // Draw score
+    text(score, 20, 20);
   }
 };
 
